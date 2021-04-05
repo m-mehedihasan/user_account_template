@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width;initial-scale=1.0">
+        <title>Login</title>
+        <!-- font awesome cdn -->
+        <script src="https://kit.fontawesome.com/15493a3558.js" crossorigin="anonymous"></script>
+        <!-- custom css  -->
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <!-- Avatar logo  -->
+                <div class="avatar">
+                    <img src="images/profile_avatar.svg" alt="avatar">
+                </div>
+                <!-- login heading  -->
+                <h2>Login Window</h2>
+                <form method="POST">
+                 <!-- username field  -->
+                 <div class="fields first">
+                     <div class="icon">
+                         <!-- user icon  -->
+                         <i class="fas fa-user"></i>
+                     </div>
+                     <div class="input-field">
+                         <h5>Username</h5>
+                         <input type="text" class="input">
+                     </div>
+                 </div>
+                 <!-- password field  -->
+                 <div class="fields second">
+                     <div class="icon">
+                         <!-- lock icon  -->
+                         <i class="fas fa-lock"></i>
+                     </div>
+                     <div class="input-field">
+                         <h5>Password</h5>
+                         <input type="password" class="input">
+                     </div>
+                 </div>
+                 <a href="#">Forgot password?</a>
+                 <button type="submit" class="btn btn-login">Login</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="js/login.js"></script>
+</html>

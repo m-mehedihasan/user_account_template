@@ -1,0 +1,202 @@
+/* variable  */
+:root{
+    --custom-gray: #d9d9d9;
+    --primary: #0bbaa9;
+    --seconday: #60be9d;
+    --finally: #1bcf4b;
+    --login-button-color: #037d9e; 
+    --light: #ffffff;
+    --h1: 3rem;
+    --h2: 2.5rem;
+    --h3: --2.0rem;
+    --h5: 1.6rem;
+    --h5: 1.2rem;
+    
+    --animate-time: .3s;
+}
+
+/* custom font face  */
+
+@font-face {
+    font-family: "RobotoSlab";
+    src: url("../fonts/RobotoSlab-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'RobotoSlab'; /* Custom */
+    font-size: 1em;
+    background-color: #f1f1f1;
+    /* Setting up all content in center */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* style for form  */
+.form-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    width: 400px;
+    padding: 0.8rem;
+    background-color: var(--light);
+    
+}
+form {
+    width: 100%;
+    padding: 0.2rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+/* logo  */
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar img {
+    width: 100px;
+    height: 100px;
+}
+/* end of avatar  */
+
+
+/* form heading  */
+.form-container h2 {
+    font-size: var(--h5);
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+/* end of heading  */
+
+/* input fields  */
+.fields {
+    
+    display: grid;
+    grid-template-columns: 15% 85%;
+    border-bottom: 1px solid var(--custom-gray);
+    margin: 0.5rem;
+    position: relative;
+    transition: var(--animate-time);
+}
+/* specially selected two fields  */
+.first {
+    margin-top: 15px;
+}
+.second {
+    margin-top: 20px;
+}
+
+.fields .icon {
+    color: var(--custom-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    font-size: var(--h5);
+    transition: var(--animate-time);
+}
+
+.fields .input-field {
+
+    margin: 0.5rem 0.2rem;
+    position: relative;
+}
+
+/* selcting all input box  */
+.input {
+    position: absolute;
+    left: 0;    
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    background: none;
+    padding: 0.5rem 0.8rem;
+    font-size: var(--h5);
+    font-family: 'RobotoSlab';
+    border: none;
+    outline: none;
+}
+.input-field > h5 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    font-family: 'RobotoSlab';
+    transition: var(--animate-time);
+    color: var(--custom-gray);
+
+}
+
+/* end of input fields  */
+
+
+/* javascript functionality  */
+.fields.focus .input-field>h5 {
+    top: -12px;
+    font-size: 0.8rem;
+}
+.fields.focus {
+    border-bottom: 1px solid var(--finally);
+}
+.fields.focus .icon {
+    color: var(--finally);
+    
+}
+
+/* forgot password style  */
+.form-container a {
+    color: var(--seconday);
+    text-align: left;
+    margin: 0rem 0.5rem 0.8rem 0.5rem;
+    display: block;
+    text-decoration: none;
+
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* login button  */
+.btn {
+    display: block;
+    outline: none;
+    font-family: 'RobotoSlab';
+}
+
+.btn-login {
+    border: none;
+   
+    color: var(--light);
+    border-radius: 25px;
+    padding: .6rem 0rem;
+    font-size: 1rem;
+    transition: .6s;
+    background-image: linear-gradient(to right, #18718a, #1aa1c7, #037d9e);
+    background-size: 200%;
+    width: 100%;
+}
+.btn-login:hover{
+    cursor: pointer;
+    background-position: right;
+}
