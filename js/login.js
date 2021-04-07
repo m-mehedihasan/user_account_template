@@ -8,14 +8,14 @@ inputs.forEach( input =>{
 
 function addFocus() {
     //
-    let parent = this.parentNode.parentNode;
+    let parent = this.parentNode.parentNode; // fields.focus
     parent.classList.add('focus');
 
 }
 
 function removeFocus () {
     //
-    let parent = this.parentNode.parentNode;
+    let parent = this.parentNode.parentNode; //fields
     if(this.value == "") {
         parent.classList.remove('focus');
     } // end of if
