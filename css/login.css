@@ -192,3 +192,21 @@ form {
     cursor: pointer;
     background-position: right;
 }
+
+/* create account info */
+.create-account-info {
+    text-align: left;
+    padding: .5rem .2rem;
+}
+.create-account-info p{
+    text-align: left;
+    font-style: italic;
+    display: inline-flex;
+    color: #3c3a3d;
+
+}
+.create-account-info p a {
+    color: rgb(37, 207, 212);
+}
+
+/* end of create-account-info  */

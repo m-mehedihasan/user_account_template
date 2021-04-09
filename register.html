@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <!-- resetting styles  -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- custom css (register.css) -->
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- form container  -->
+        <div class="form-container">
+            <!-- form heading  -->
+            <div class="form-heading">
+                <h1>Sign Up</h1>
+                <p>It's Quick and Easy</p>
+            </div>
+            <!-- end of form heading  -->
+            <!-- start form  -->
+            <form method="POST">
+                <!-- name field  -->
+                <div class="fields name-field">
+                    <input type="text" class="input" placeholder="First Name" required>
+                    <input type="text" class="input" placeholder="Surname" required>
+                </div>
+                <!-- username or phone number field  -->
+                <div class="fields">
+                    <input type="text" class="input" placeholder="Username or phone number" required>
+                </div>
+                <!-- password field  -->
+                <div class="fields">
+                    <input type="password" class="input" placeholder="New Password" required>
+                </div>
+                <!-- date of birth field  -->
+                <div class="date-of-birth-field">
+                    <!-- label for options  -->
+                    <label for="birth">Date of Birth</label>
+                    <!-- input options for day-month-year  -->
+                    <div class="birth-input-options" id="birth">
+                        <!-- day field  -->
+                        <select name="b_day" id="id_b_day">
+                            <option value="day">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                        <!-- end of birth day field  -->
+                        <!-- month field  -->
+                        <select name="b_month" id="id_b_month">
+                            <option value="month">Month</option>
+                            <option value="jan">Jan</option>
+                            <option value="feb">Feb</option>
+                        </select>
+                        <!-- end of birth month field  -->
+                        <!-- Year field  -->
+                        <select name="b_year" id="id_b_year">
+                            <option value="year">Year</option>
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                        </select>
+                        <!-- end of birth year field  -->
+                    </div>
+                    <!-- end ( birth input options ) -->
+                </div>
+                <!-- end (date of birth field ) -->
+                <!-- start gender field  -->
+                <div class="gender-select">
+                    <label for="gender">Gender</label>
+                    <!-- making some gender option  -->
+                    <div class="gender-option">
+                        <!-- option for male  -->
+                        <div class="options-box">
+                            <label for="male">Male</label>
+                            <div class="input-for-radio">
+                                <input type="radio" id="male" name="gender">
+                            </div>
+                        </div>
+                        <!-- option for female  -->
+                        <div class="options-box">
+                            <label for="female">Female</label>
+                            <div class="input-for-radio">
+                                <input type="radio" id="female" name="gender">
+                            </div>
+                        </div>
+                        <!-- option for custom  -->
+                        <div class="options-box">
+                            <label for="custom">Custom</label>
+                            <div class="input-for-radio">
+                                <input type="radio" id="custom" name="gender">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end ( gender-option ) -->
+                </div>
+                <div class="terms-conditions">
+                    By clicking Sign Up, you agree to our <a href="#">Terms</a>,
+                    <a href="#">Data Policy</a> and <a href="#">Cookie Policy</a>. You may receive SMS notifications
+                    from us and can opt out at any time.
+                </div>
+                <!-- end gender-field  -->
+                <div class="fields btn-fields">
+                    <button type="submit" class="btn-signup">Sign Up</button>
+                </div>
+            </form>
+            <!-- end form  -->
+        </div>
+        <!-- end ( form container ) -->
+    </div>
+    <!-- end of container  -->
+</body>
+    <!-- jquery   -->
+    <script src="js/jQuery-3.6.0.js"></script>
+    <!-- custom js (register.js) -->
+    <script src="js/register.js"></script>
+</html>
